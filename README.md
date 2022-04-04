@@ -14,8 +14,5 @@ A webstie that offers fitness training services.
 Made with <3 by Angela Gola
 
 ### ©️2019 Run Buddy, Inc
-<<<<<<< HEAD
-=======
 
 Test
->>>>>>> 1deb79ebe3e0023aee5122c9e944009a3e38dde2
