@@ -13,4 +13,4 @@ A webstie that offers fitness training services.
 ## Contribution
 Made with <3 by Angela Gola
 
-### ©️2019 Run Buddy Inc
+### ©️2019 Run Buddy, Inc
