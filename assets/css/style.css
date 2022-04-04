@@ -69,11 +69,24 @@ section {
 }
 
 .hero {
-    background-image: url("../images/hero-bg.jpg");
+    background-image: url("../images/flipped-hero-image.jpg");
     height: 600px;
     background-size:cover;
     background-position: center;
     position: relative; /* This has no effect on the form moving. WHy didnt it float?*/
+}
+
+.hero-paragraph h2{
+    color:#fce138;
+    font-style: italic;
+    font-size: 30px;
+}
+
+.hero-paragraph {
+    color: white;
+    display: flex;
+    height: 900px;
+    justify-content: center;
 }
 
 .hero-form {
