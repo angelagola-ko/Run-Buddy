@@ -1,6 +1,6 @@
 # Run Buddy, Inc
 
-## Purpose,,
+## Purpose
 A webstie that offers fitness training services.
 
 ## Built With
@@ -14,5 +14,3 @@ A webstie that offers fitness training services.
 Made with <3 by Angela Gola
 
 ### ©️2019 Run Buddy, Inc
-
-Test
