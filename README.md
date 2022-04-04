@@ -8,7 +8,7 @@ A webstie that offers fitness training services.
 * CSS
 
 ## Website
-https://lernantino.github.io/run-buddy/
+ https://angelagola-ko.github.io/runbud/
 
 ## Contribution
 Made with <3 by Angela Gola
