@@ -196,12 +196,23 @@ primary/sec border
     flex: 1 30%;
 }
 
+.step-img {
+    flex: 1 12%;
+    margin-right: 20px;
+}
+
+.step-img img { /*For Microsoft Edge Brownsers*/
+    max-width: 100%;
+}
 .step-info {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     flex: 2 70%;
+}
 
+.step-text {
+    flex: 12;
 }
 
 .step-text p {
