@@ -15,9 +15,13 @@ header {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    position: -webkit-sticky; /*For Internet Explorer*/
+    /* position: -webkit-sticky; /*For Internet Explorer*/
     position: sticky;
     top: 0;
+    background-image: url("../images/flipped-hero-image.jpg");
+    background-size:cover;
+    background-position: 80% ;
+    background-attachment: fixed;
 }
 
 header h1{
@@ -45,7 +49,7 @@ header nav ul {
 
 }
 
-header nav ul li a {
+header nav ul li a:hover {
     padding: 10px 15px;
     /* margin: 0 30px;*/
     font-weight: lighter; /*wtf does this even do*/
@@ -60,11 +64,12 @@ section {
 .hero {
     background-image: url("../images/flipped-hero-image.jpg");
     background-size:cover;
-    background-position: center;
+    background-position: 80%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     align-items: flex-start;
+    background-attachment: fixed;
 }
 
 .hero-cta {
@@ -125,13 +130,19 @@ section {
     width: 100%;
     margin-bottom: 15px;
     border-radius: 10px;
+    background-color: rgba(225,225,225,.75);
+}
+
+.form-input:focus {
+    background: rgba(225,225,225,1);
+    outline: none;
 }
 
 .hero-form label {
     margin: 0 5px;
 }
 
-.hero-form button {
+.hero-form button:hover {
     background-color: #024e76;
     color: #fce138;
     font-size: 16px;
@@ -198,11 +209,15 @@ primary/sec border
     margin: 50px auto;
     padding-bottom: 50px;
     width: 80%;
-    border-bottom: 1px solid #39a6b2;
+    /* border-bottom: 1px solid #39a6b2;*/
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+}
+
+.step:not(:last-child) {
+    border-bottom: 1px solid #39a6b2;
 }
 
 .step h3 {
@@ -355,9 +370,15 @@ primary/sec border
     margin-bottom: 15px;
     margin-top: 5px;
     border-radius: 10px;
+    background-color: rgba(225,225,225,.75);
 }
 
-.contact-form button {
+.contact-form input:focus, .contact-form textarea:focus {
+    background: rgba(225,225,225,1);
+    outline: none;
+}
+
+.contact-form button:hover {
     width: 100%;
     border: none;
     background: #fce138;
@@ -398,6 +419,7 @@ footer a {
     header {
         padding-bottom: 0;
         justify-content: center;
+        position: relative;
     }
 
     header h1 {
