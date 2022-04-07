@@ -151,6 +151,69 @@ section {
     border-radius: 10px;
 }
 
+.checkbox-wrapper input, .radio-wrapper input {
+    opacity: 0;
+}
+
+.checkbox-wrapper label, .radio-wrapper label {
+    position: relative;
+    left: 10px;
+    margin: 10px;
+    line-height: 1.6;
+}
+
+.checkbox-wrapper label::before, .radio-wrapper label::before {
+    content: "";
+    height: 20px;
+    width: 20px;
+    background: rgba(225,225,225,.75);
+    border: 1px solid #024e76;
+    position: absolute;
+    top: -4px;
+    left: -30px;
+}
+
+.radio-wrapper label::before {
+    border-radius: 50%;
+}
+
+.radio-wrapper label::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #024e76;
+    position: absolute;
+    top: -3px;
+    left: -29px;
+    background-image: radial-gradient(circle, #39a6b2, #024e76);
+}
+
+/*.radio-wrapper input:checked + label , .checkbox-wrapper input:checked + label {
+    font-weight: bold;
+}*/
+.checkbox-wrapper input + label::after,
+.radio-wrapper input + label::after {
+    content:none;
+}
+
+.checkbox-wrapper input:checked + label::after,
+.radio-wrapper input:checked + label::after {
+    content: "";
+}
+
+.checkbox-wrapper label::after {
+    content: "";
+    height: 6px;
+    width: 14px;
+    border-left: 2px solid #024e76;
+    border-bottom: 2px solid #024e76;
+    position: absolute;
+    top: 1px;
+    left: -26px;
+    transform: rotate(-58deg);
+}
+
 /*Deleting because added
 primary,secondary border and section title.
 .intro h2 {
@@ -388,7 +451,6 @@ primary/sec border
     font-size: 16px;
     border-radius: 10px;
 }
-
 
 footer {
     background: #fce138;
