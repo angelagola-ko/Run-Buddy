@@ -3,6 +3,7 @@
     <head>
         <link rel="stylesheet" href="./assets/css/style.css" />
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Run Buddy</title>
     </head>
     <body>
@@ -29,6 +30,11 @@
         </header>
 
         <section class="hero">
+            <div class="hero-cta">
+                <h2>Start Building Habits</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus fugiat adipisci repellendus ipsam! Ratione excepturi consequatur iure adipisci. Provident iusto dolores, fugit repellendus ipsam nihil laboriosam. Nobis quos eligendi ea!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque sint reiciendis, neque cupiditate cum fugit est natus rem perspiciatis, consequuntur voluptate odio incidunt? Aliquam iure neque omnis mollitia, quam quaerat.</p>
+            </div>
             <div class="hero-form">
                 <h3>Get Started Today</h3>
                 <p>Fill out this form and one of our trainers will schedule a consult</p>
@@ -41,14 +47,20 @@
                     <input type="tel" placeholder="Phone Number" name="phone" id="phone" class="form-input"/>
                     <p>
                         Have you worked out with a trainer before?
-                        <input type="radio" name="trainer-confirm" id="trainer-yes"/>
-                        <label for="trainer-yes">Yes</label>
-                        <input type="radio" name="trainer-confirm" id="trainer-no"/>
-                        <label for="trainer-no">No</label>
+                        <span class="radio-wrapper">
+                            <input type="radio" name="trainer-confirm" id="trainer-yes"/>
+                            <label for="trainer-yes">Yes</label>
+                        </span>
+                        <span class="radio-wrapper">
+                            <input type="radio" name="trainer-confirm" id="trainer-no"/>
+                            <label for="trainer-no">No</label>
+                        </span>
                     </p>
                     <p>
-                        I acknowledge that I am at least 18 years of age.
-                        <input type="checkbox" name="age-confirm" id="checkbox">
+                        <span class="checkbox-wrapper">
+                            <input type="checkbox" name="age-confirm" id="checkbox">
+                            <label for="checkbox">I acknowledge that I am at least 18 years of age.</label>
+                        </span>
                     </p>
                     <button type="submit">
                         Get Running!
@@ -58,97 +70,155 @@
         </section>
 
         <section id="what-we-do" class="intro">
-            <h2 class="section-title primary-border">What we do.</h2>
-            <p> 
-                Butcher selfies, lift weights, and dance silly. Also make and eat amazing food. 10/10 chef big guns over here. Let's go! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores quos aliquid, distinctio harum illum est quisquam incidunt repellendus illo aspernatur neque nihil aliquam, maiores quibusdam pariatur sunt quidem atque sequi?
-            </p>
+            <div class="flex-row">
+                <h2 class="section-title primary-border">
+                    What we do.
+                </h2>
+            </div>
+                <div class="flex-row">
+                    <p> 
+                        Butcher selfies, lift weights, and dance silly. Also make and eat amazing food. 10/10 chef big guns over here. Let's go! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores quos aliquid, distinctio harum illum est quisquam incidunt repellendus illo aspernatur neque nihil aliquam, maiores quibusdam pariatur sunt quidem atque sequi?
+                    </p>
+                </div>
+            </div>
         </section>
 
         <section id="what-you-do" class="steps">
-            <h2 class="section-title secondary-border">What you do.</h2>
-
-            <div>
-                <img src="./assets/images/step-1.svg">
-                <h3>Step 1:<span>Fill Out the Form Above.</span></h3>
-                <p>You're already here, so why not?</p>
+            <div class="flex-row">
+                <h2 class="section-title secondary-border">
+                    What you do.
+                </h2>
             </div>
 
-            <div>
-                <img src="./assets/images/step-2.svg">
-                <h3>Step 2: <span>Consult with One of Our Trainers.</span></h3>
-                <p>Are you here to build muscle, lose weight, or just feel good?</p>
+            <div class="step">
+                <h3>Step 1.</h3>
+                <div class="step-info">
+                    <div class="step-img">
+                        <img src="./assets/images/step-1.svg">
+                    </div>
+                    <div class="step-text">
+                        <p>Fill Out the Form Above.</p>
+                        <p>You're already here, so why not?</p>
+                    </div>
+                </div>
             </div>
 
-            <div>
-                <img src="./assets/images/step-3.svg">
-                <h3>Step 3: <span>Get Running.</span></h3>
-                <p>Hit the ground running (literally) one your trainer lays out the plan.</p>
+            <div class="step">
+                <h3>Step 2</h3>
+                <div class="step-info">
+                    <div class="step-img">
+                        <img src="./assets/images/step-2.svg">
+                    </div>
+                    <div class="step-text">
+                            <p>Consult with One of Our Trainers.</p>
+                            <p>Are you here to build muscle, lose weight, or just feel good?</p>
+                    </div>
+                </div>
             </div>
 
-            <div>
-                <img src="./assets/images/step-4.svg">
-                <h3>Step 4: <span>See Results.</span></h3>
-                <p>Bi-weekly chekins with your trainer will keep you focused.</p>
+            <div class="step">
+                <h3>Step 3.</h3>
+                <div class="step-info">
+                    <div class="step-img">
+                        <img src="./assets/images/step-3.svg">
+                    </div>
+                    <div class="step-text">
+                        <p>Get Running.</p>
+                        <p>Hit the ground running (literally) one your trainer lays out the plan.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="step">
+                <h3>Step 4.</h3>
+                <div class="step-info">
+                    <div class="step-img">
+                        <img src="./assets/images/step-4.svg">
+                    </div>
+                    <div class="step-text">
+                        <p>See Results.</p>
+                        <p>Bi-weekly chekins with your trainer will keep you focused.</p>
+                    </div>
+                </div>
             </div>
         </section>
 
         <section id="your-trainers" class="trainers">
-            <h2 class="section-title primary-border">Meet the trainers</h2>
-            <article class="trainer">
-                <img src="./assets/images/trainer-1.jpg" alt="Aaron, but not Aaron Rogers">
-                <div class="trainer-bio text-left">
-                    <h3>Aaron Stephens</h3>
-                    <h4>Speed/Strength</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, voluptas. Distinctio officia rem eius. Quidem totam nemo enim molestiae, vero molestias maxime accusantium ab ducimus incidunt mollitia, iste at ut!</p>
-                </div>
-            </article>
-            <article class="trainer">
-                <div class="trainer-bio text-right">
-                    <h3>Aubrey Wilson</h3>
-                    <h4>Enduraance</h4>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam distinctio eveniet officia molestiae, veniam voluptatum? Labore debitis omnis hic sequi, modi error delectus excepturi neque voluptatem, asperiores aliquid, iure aperiam!</p>
-                </div>
-                <img src="./assets/images/trainer-2.jpg" alt="A chick">
-            </article>
-            <article class="trainer">
-                <img src="./assets/images/trainer-3.jpg" alt="Headband Man">
-                <div class="trainer-bio text-left">
-                    <h3>Headband Man</h3>
-                    <h4>Stength</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, culpa aspernatur optio veritatis architecto possimus voluptatum velit quia officiis vel nostrum tempora nemo quaerat minus eveniet eligendi! Adipisci, ad officiis!</p>
-                </div>
-            </article>
-        </section>
-
-        <section id="reach-out" class="contact">
-            <h2 class="section-title secondary-border">Reach Out</h2>
-            <div class="contact-info">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6191.686988879758!2d-82.51292866933647!3d27.60985716502698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c323cbe11e3271%3A0xb975f5dcf15c53a0!2sEsplanade%20at%20Artisan%20Lakes%20-%20Taylor%20Morrison!5e0!3m2!1sen!2sus!4v1648580581083!5m2!1sen!2sus" 
-                style="border:0;" 
-                allowfullscreen="" 
-                loading="lazy" 
-                referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
-                <div>
-                    <h3>Run Buddy</h3>
-                    <p>
-                        Any questions or concerns before signing up?
-                        <br />
-                        Let us know and we will be happy to talk with you!
-                    </p>
-                    <address>
-                        11 Main Street<br/>
-                        Wherever, USA<br/>
-                        12345<br/>
-                        Phone: 111.RUN.BUDS (111.786.3837)<br/>
-                        Email: <a href="mailto:info@runbuddy.io">info@runbuddy.io</a>
-                    </address>
-                    
-                </div>
+            <div class="flex-row">
+                <h2 class="section-title primary-border trainers"> <!--I added the trainers class-->
+                    Meet The Trainers
+                </h2>
+            </div>
+            <div class="trainers">
+                <article class="trainer">
+                    <img src="./assets/images/trainer-1.jpg" alt="Aaron, but not Aaron Rogers">
+                    <div class="trainer-bio">
+                        <h3 class="trainer-name">Aaron Stephens</h3>
+                        <h4 class="trainer-role">Speed/Strength</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, voluptas. Distinctio officia rem eius. Quidem totam nemo enim molestiae, vero molestias maxime accusantium ab ducimus incidunt mollitia, iste at ut!</p>
+                    </div>
+                </article>
+                <article class="trainer">
+                    <img src="./assets/images/trainer-2.jpg" alt="A chick">
+                    <div class="trainer-bio">
+                        <h3 class="trainer-name">Aubrey Wilson</h3>
+                        <h4 class="trainer-role">Endurance</h4>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam distinctio eveniet officia molestiae, veniam voluptatum? Labore debitis omnis hic sequi, modi error delectus excepturi neque voluptatem, asperiores aliquid, iure aperiam!</p>
+                    </div>
+                </article>
+                <article class="trainer">
+                    <img src="./assets/images/trainer-3.jpg" alt="Headband Man">
+                    <div class="trainer-bio">
+                        <h3 class="trainer-name">Headband Man</h3>
+                        <h4 class="trainer-role">Stength</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, culpa aspernatur optio veritatis architecto possimus voluptatum velit quia officiis vel nostrum tempora nemo quaerat minus eveniet eligendi! Adipisci, ad officiis!</p>
+                    </div>
+                </article>
             </div>
         </section>
 
-        <footer>
+        <section id="reach-out" class="contact">
+            <div class="flex-row">
+                <h2 class="section-title secondary-border">
+                    Reach Out
+                </h2>
+            </div>
+                <div class="contact-info">
+                    <div>
+                        <h3>Run Buddy</h3>
+                        <p>
+                            Any questions or concerns before signing up?
+                            <br />
+                            Let us know and we will be happy to talk with you!
+                        </p>
+                        <address>
+                            11 Main Street<br/>
+                            Wherever, USA<br/>
+                            12345<br/>
+                            Phone: 111.RUN.BUDS (111.786.3837)<br/>
+                            Email: <a href="mailto:info@runbuddy.io">info@runbuddy.io</a>
+                        </address>
+                    </div>
+                    <div class="contact-form">
+                        <h3>Contact Us</h3>
+                        <form>
+                            <label for="contact-name">Your Name</label>
+                            <input type="text" id="contact-name" placeholder="Your Name" />
+                            <label for="contact-message">Message</label>
+                            <textarea id="contact-message" placeholder="Message"></textarea>
+                            <button type="Submit">Submit</button>
+                        </form>
+                    </div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6191.686988879758!2d-82.51292866933647!3d27.60985716502698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c323cbe11e3271%3A0xb975f5dcf15c53a0!2sEsplanade%20at%20Artisan%20Lakes%20-%20Taylor%20Morrison!5e0!3m2!1sen!2sus!4v1648580581083!5m2!1sen!2sus" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+        </section>
+
+        <footer class="footer">
             <h2>Made with love by Run Bud.</h2>
             <div>
                 <a href="./privacy-policy.html">Read Our Privacy Policy</a> <br />
